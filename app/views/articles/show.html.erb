@@ -4,5 +4,8 @@
 <p><strong>Description: </strong><%= @article.description %></p>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Return to articles listing', articles_path %> |
-<%= button_to 'Delete', article_path(@article), method: :delete %>
+<%= link_to 'Return to articles listing', articles_path %>
+
+<p>
+  <%= button_to 'Delete', article_path(@article), method: :delete %>
+</p>
